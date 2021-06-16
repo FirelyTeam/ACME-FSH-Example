@@ -1,0 +1,13 @@
+- name: canonical-starts-with
+  filter: url.exists() and ImplementationGuide.exists().not()
+  # Excluding IGs for now, since they have a Simplifier.net canonical
+  status: "Checking if canonical URL starts with correct base"
+  predicate: url.startsWith('https://fake-acme.org/fhir/')
+  error-message: "Canonical URL doesn't start with correct base"
+
+- name: publisher-filled
+  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+  # Excluding IGs for now, since they don't have a way to set metadata
+  status: "Checking if all resources have publisher filled"
+  predicate: publisher.exists() and (publisher in ('ACME Corp'))
+  error-message: "Publisher not filled (correctly)"
