@@ -1,0 +1,14 @@
+{
+  "name": null,
+  "version": null,
+  "description": null,
+  "author": null,
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "devDependencies": null,
+  "canonicals": null,
+  "dependencies": {
+    "acme.base.r4": "4.0.3"
+  }
+}
