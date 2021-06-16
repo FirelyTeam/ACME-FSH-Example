@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MyPatient",
-  "url": "https://fake-acme.org/fhir//StructureDefinition/MyPatient",
+  "url": "https://fake-acme.org/fhir/ACME-FSH-Example/StructureDefinition/MyPatient",
   "version": "0.1.0",
   "name": "MyPatient",
   "status": "active",

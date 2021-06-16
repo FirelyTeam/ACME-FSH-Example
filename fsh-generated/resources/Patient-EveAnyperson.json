@@ -3,7 +3,7 @@
   "id": "EveAnyperson",
   "meta": {
     "profile": [
-      "https://fake-acme.org/fhir//StructureDefinition/MyPatient"
+      "https://fake-acme.org/fhir/ACME-FSH-Example/StructureDefinition/MyPatient"
     ]
   },
   "identifier": [
