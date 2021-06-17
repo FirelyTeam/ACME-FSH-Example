@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "name": "MyPatient",
   "status": "active",
+  "publisher": "ACME Corp",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
