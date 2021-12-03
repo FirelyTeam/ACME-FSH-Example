@@ -1,0 +1,15 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: acme.fsh.example
+canonical: https://fake-acme.org/fhir/ACME-FSH-Example
+name: ACME-FSH-Example
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+dependencies:
+  acme.base.r4:
+    uri: https://simplifier.net/guide/acmebaseprojectr4implementationguide
+    version: 4.0.4
+FSHOnly: true
