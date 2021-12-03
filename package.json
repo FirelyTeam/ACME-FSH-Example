@@ -1,0 +1,9 @@
+{
+  "name": "ACME-FSH-Example",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "acme.base.r4": "4.0.4"
+  }
+}
