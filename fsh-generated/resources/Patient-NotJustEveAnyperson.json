@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "EveAnyperson",
+  "id": "NotJustEveAnyperson",
   "meta": {
     "profile": [
       "https://fake-acme.org/fhir/ACME-FSH-Example/StructureDefinition/MyPatient"
@@ -18,7 +18,7 @@
       "given": [
         "Eve"
       ],
-      "family": "Anyperson"
+      "family": "NotJustAnyperson"
     }
   ],
   "gender": "female"
