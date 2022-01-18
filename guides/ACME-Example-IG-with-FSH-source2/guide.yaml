@@ -1,0 +1,5 @@
+title: ACME Example IG with FSH source
+description: An example Implementation Guide built with FHIR Shorthand resources as source data.
+version: 0.1.0
+style-root: styles
+style-name: ballotable

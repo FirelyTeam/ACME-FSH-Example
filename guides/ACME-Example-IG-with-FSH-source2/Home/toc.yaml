@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.guide.md
+- name: Artifacts
+  filename: Artifacts
+- name: Security
+  filename: Security.guide.md
+- name: Downloads
+  filename: Downloads.guide.md
+- name: Search
+  filename: Search.guide.md

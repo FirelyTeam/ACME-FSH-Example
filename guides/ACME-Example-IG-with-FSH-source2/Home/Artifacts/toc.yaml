@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.guide.md
+- name: 'Structures: Resource Profiles'
+  filename: StructuresResourceProfiles
+- name: 'Example: Example Instances'
+  filename: ExampleExampleInstances
