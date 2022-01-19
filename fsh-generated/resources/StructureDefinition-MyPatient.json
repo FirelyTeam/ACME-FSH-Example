@@ -54,7 +54,7 @@
       {
         "id": "Patient.photo",
         "path": "Patient.photo",
-        "max": "1",
+        "max": "0",
         "mustSupport": true
       }
     ]
