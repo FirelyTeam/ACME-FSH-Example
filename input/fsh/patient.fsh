@@ -5,4 +5,4 @@ Profile: MyPatient
 Parent: https://fake-acme.org/fhir/StructureDefinition/ACME-base-patient
 * ^publisher = "ACME Corp"
 * name 1..1
-* photo ..1 MS
+* photo ..0 MS
