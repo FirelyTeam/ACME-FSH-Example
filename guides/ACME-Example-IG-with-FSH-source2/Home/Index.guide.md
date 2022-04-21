@@ -7,7 +7,7 @@
 
 </div>
 
-👋 This is an example of an Implementation Guide made with the interactive Simplifier.net IG editor and GitHub.
+👋 This is an example of an Implementation Guide made with the interactive Simplifier.net IG editor and GitHub!
 
 Please see the Artifacts page for all resources described in this project.
 
