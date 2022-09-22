@@ -39,7 +39,7 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5-alpha9
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5-alpha10
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           # PATH_TO_EXAMPLES: Examples
@@ -50,7 +50,6 @@ jobs:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true
-          SUSHI_VERSION: '2.6.0'
 
       - name: Add & Commit
         uses: EndBug/add-and-commit@v7
