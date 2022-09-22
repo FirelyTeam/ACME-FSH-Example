@@ -39,14 +39,14 @@ jobs:
           java-version: 1.8
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5-alpha7
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5-alpha8
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           # PATH_TO_EXAMPLES: Examples
           PATH_TO_QUALITY_CONTROL_RULES: acme
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
-          # EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
+          EXPECTED_FAILS: VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true
