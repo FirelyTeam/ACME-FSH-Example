@@ -1,0 +1,50 @@
+# See the FHIR Package Specification for the valid format of a FHIR package: https://confluence.hl7.org/display/FHIR/NPM+Package+Specification
+# Documentation on the format of a bake file is available here: https://simplifier.net/docs/bake
+
+sushi:
+  - files: /**/*.fsh
+  - action: sushi
+  - move: /package/generated/
+  - target: bucket1
+
+# Transform all resources to JSON (Mandatory according to the specification)
+transform-to-json:
+  - source: bucket1
+  - category: Resource
+  - transform: json
+  - target: bucket2
+
+# Generate snapshots for all StructureDefinitions (Optional)
+# Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
+generate-snapshots:
+  - source: bucket2
+  - category: Profile
+  - action: snapshot
+  - target: bucket2
+
+# Move all conformance resources to the /package folder (Mandatory according to the specification)
+move-conformance-resources:
+  - source: bucket2
+  - category: Conformance
+  - move: /package/
+  - target: output
+
+# Move all examples to the /package/examples folder (Optional)
+move-examples:
+  - source: bucket2
+  - category: Instance
+  - move: /package/examples
+  - target: output
+
+# Move the Package Manifest to the /package folder (Mandatory according to the specification)
+manifest:
+  - source: input
+  - files: package.json
+  - move: /package
+
+# Generate an .index.json file with all files in the package (Optional)
+index-file:
+  - source: output
+  - files: /package/**/*.json
+  - action: create-package-index
+  - move: /package
